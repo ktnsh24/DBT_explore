@@ -1,0 +1,14 @@
+
+target/
+dbt_packages/
+logs/
+
+vcx.xml
+modules.xml
+misc.xml
+DBT_explore.iml
+
+../logs/
+
+../.idea/
+
