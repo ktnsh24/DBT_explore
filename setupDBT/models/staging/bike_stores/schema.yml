@@ -1,0 +1,36 @@
+version: 2
+
+sources:
+  - name: sales_store
+    description: This schema tells about all of the info realted to sales
+    database: BikeStores
+    schema: sales
+    tables:
+      - name: customers
+        description: Provide the information about the customers
+        columns:
+          - name: customer_id
+            tests:
+              - not_null
+              - unique
+
+  - name: production_store
+    description: This schema tells about all of the info realted to prodution database
+    database: BikeStores
+    schema: production
+    tables:
+      - name: categories
+        description: Provide the information about the different product categories
+        columns:
+          - name: category_id
+      - name: products
+        description: Provide the information about the different products
+        columns:
+          - name: source_product_id
+            tests:
+              - relationship:
+                  to: ref('products')
+                  from: product_id
+
+
+

@@ -36,3 +36,8 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+      +schema: staging
+    staging:
+      bike_stores:
+        +materialized: table
+        +schema: staging
