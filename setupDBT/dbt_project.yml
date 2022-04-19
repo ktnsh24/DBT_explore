@@ -41,3 +41,9 @@ models:
       bike_stores:
         +materialized: table
         +schema: staging
+    dimensional:
+      +materialized: table
+      +schema: staging
+    facts:
+      +materialized: table
+      +schema: staging
