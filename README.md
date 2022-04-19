@@ -29,4 +29,4 @@ https://www.sqlservertutorial.net/sql-server-sample-database/
 
 The following illustrates the BikeStores database diagram:
 
-![BikeStores database](../../../../Downloads/SQL-Server-Sample-Database.png)
+![SQL-Server-Sample-Database.png](../../../../Downloads/SQL-Server-Sample-Database.png)

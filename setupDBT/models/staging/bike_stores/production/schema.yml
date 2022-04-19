@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: production_store
+    description: This schema tells about all of the info realted to prodution database
+    database: BikeStores
+    schema: production
+    tables:
+      - name: categories
+        description: Provide the information about the different product categories (type of bicycle)
+        columns:
+          - name: category_id
+            tests:
+              - not_null
+              - unique
+      - name: products
+        description: Provide the information about the different products (bike)
+        columns:
+          - name: source_product_id
+            tests:
+              - relationship:
+                  to: ref('products')
+                  from: product_id
+      - name: stocks
+        description: Provide the information about the quantity of each product (bike) available in the different stores
+        columns:
+          - name: store_id
+      - name: brands
+        description: Provide the information about the bike brands name
+        columns:
+          - name: brand_id
+            tests:
+              - not_null
+              - unique

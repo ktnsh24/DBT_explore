@@ -9,8 +9,8 @@ WITH source_products AS (
     FROM {{ source('production_store', 'products') }}
     ),
 
-    FINAL AS (
+    final AS (
         SELECT * FROM source_products
     )
 
-    SELECT * FROM FINAL
+    SELECT * FROM final
