@@ -29,4 +29,8 @@ https://www.sqlservertutorial.net/sql-server-sample-database/
 
 The following illustrates the BikeStores database diagram:
 
-![SQL-Server-Sample-Database.png](../../../../Downloads/SQL-Server-Sample-Database.png)
+![alt text](https://github.com/ktnsh24/DBT_explore/blob/master/SQL-Server-Sample-Database.png)
+
+
+Linage Graph for the BikeStores Model.
+![alt text](https://github.com/ktnsh24/DBT_explore/blob/master/LineageGraph.png)
