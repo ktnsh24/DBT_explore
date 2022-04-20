@@ -1,0 +1,16 @@
+
+version: 2
+
+sources:
+  - name: dimensional_model
+    description: "The table will provide the info about all dimensional model"
+    database: BikeStoreTransformation
+    schema: staging
+    tables:
+      - name: dim_products
+        description: "Provide the information about the product dimensional model"
+      - name: dim_staffs
+        description: "Provide the information about the staff dimensional model"
+      - name: dim_orders
+        description: "Provide the information about the orders dimensional model"
+

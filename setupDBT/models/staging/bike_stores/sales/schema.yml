@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: sales_store
+    description: This schema tells about all of the info realted to sales
+    database: BikeStores
+    schema: sales
+    tables:
+      - name: customers
+        description: Provide the information about the customers
+        columns:
+          - name: customer_id
+            tests:
+              - not_null
+              - unique
+      - name: orders
+        description: Provide the information about the orders
+        columns:
+          - name: order_id
+      - name: staffs
+        description: Provide the information about the staffs
+        columns:
+          - name: staff_id
+      - name: stores
+        description: Provide the information about the stores
+        columns:
+          - name: store_id
+      - name: order_items
+
+
+
+
+
+

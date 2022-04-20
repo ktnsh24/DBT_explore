@@ -1,0 +1,15 @@
+
+version: 2
+
+sources:
+  - name: facts_model
+    description: "The table will provide the info about the fact model"
+    database: BikeStoreTransformation
+    schema: staging
+    tables:
+      - name: fact_stocks
+        description: "Provide the information about the stocks fact model"
+      - name: fact_order_items
+        description: "Provide the information about the stocks fact model"
+
+
