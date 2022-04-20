@@ -7,7 +7,9 @@ sources:
     database: BikeStoreTransformation
     schema: staging
     tables:
-      - name: facts_stocks
+      - name: fact_stocks
+        description: "Provide the information about the stocks fact model"
+      - name: fact_order_items
         description: "Provide the information about the stocks fact model"
 
 
